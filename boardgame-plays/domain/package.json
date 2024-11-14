@@ -7,9 +7,9 @@
     "build": "tsc -b",
     "lint:check": "eslint .",
     "lint:fix": "eslint . --fix",
-    "tests": "vitest run --dir src/__tests__/",
-    "test:unit": "vitest run --dir src/__tests__/unit",
-    "test:functionnal": "vitest run --dir src/__tests__/functionnal"
+    "tests": "vitest run --dir src/__tests__/ --passWithNoTests",
+    "test:unit": "vitest run --dir src/__tests__/unit --passWithNoTests",
+    "test:functionnal": "vitest run --dir src/__tests__/functionnal --passWithNoTests"
   },
   "dependencies": {
     "zod": "^3.23.8"
