@@ -8,10 +8,10 @@
     "build": "tsc -b",
     "lint:check": "eslint .",
     "lint:fix": "eslint . --fix",
-    "tests": "vitest run --dir src/__tests__/",
-    "test:unit": "vitest run --dir src/__tests__/unit",
-    "test:functionnal": "vitest run --dir src/__tests__/functionnal",
-    "test:integration": "vitest run --dir src/__tests__/integration"
+    "tests": "vitest run --dir src/__tests__/ --passWithNoTests",
+    "test:unit": "vitest run --dir src/__tests__/unit --passWithNoTests",
+    "test:functionnal": "vitest run --dir src/__tests__/functionnal --passWithNoTests",
+    "test:integration": "vitest run --dir src/__tests__/integration --passWithNoTests"
   },
   "dependencies": {
     "@boardava/domain": "workspace:*",

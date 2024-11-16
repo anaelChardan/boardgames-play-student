@@ -46,7 +46,7 @@ Nous pouvons utiliser l'API de boardgamegeek pour retrouver ces informations.
 
 #### Model
 
-J'ai des jeux de plateux et des parties
+J'ai des jeux de plateaux et des parties
 
 On a les notions de:
 
