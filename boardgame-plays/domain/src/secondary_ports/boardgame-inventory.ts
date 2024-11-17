@@ -1,4 +1,8 @@
-import { BoardgameInventory } from "./driven_port";
+import { Boardgame } from "../model/boardgame";
+
+export type BoardgameInventory = {
+  getBoardgameByName: (name: string) => Promise<Boardgame | null>;
+};
 
 export const boardgameInventoryStub: BoardgameInventory = {
   getBoardgameByName: async (name: string) => {
