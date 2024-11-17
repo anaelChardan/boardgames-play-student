@@ -30,6 +30,10 @@ check-dependencies:
 .PHONY: install
 install: check-dependencies update ## Install the Application and reset the database
 
+.PHONY: start-docker
+start-docker: ## Start Docker
+	@docker-compose up -d
+
 .PHONY: update
 update: check-dependencies ## Update the Repo
 	@$(PACKAGE_MANAGER) install
