@@ -1,7 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { Play } from "../../model/play";
-import { PlayAGame } from "../../use_cases/play-a-game/driver_port";
-import { buildPlayAGame } from "../../use_cases/play-a-game/implementation";
+import { PlayAGame, buildPlayAGame } from "../../use_cases/play-a-game";
 
 describe("Play a game functionnal tests", () => {
   it("should play a game with the correct number of players", async () => {
