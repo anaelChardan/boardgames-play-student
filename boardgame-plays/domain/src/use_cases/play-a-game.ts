@@ -1,5 +1,9 @@
-import { BoardgameInventory } from "../../secondary_ports/boardgame-inventory/driven_port";
-import { PlayAGame } from "./driver_port";
+import { Play } from "../model/play";
+import { BoardgameInventory } from "../secondary_ports/boardgame-inventory";
+
+export type PlayAGame = {
+  forBoardgame: (boardgameName: string, players: string[]) => Promise<Play>;
+};
 
 type Dependencies = {
   boardgameInventory: BoardgameInventory;
